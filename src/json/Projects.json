@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Tryit-Editor",
+    "description": "Een recreatie van de Online HTML Editor van W3schools",
+    "tech_stack": "HTML, TailwindCSS, JavaScript, PHP, MySQL",
+    "live_demo_link": "http://tryit-editor.larsvanholland.com/",
+    "source": "https://github.com/FilterdWater/Tryit-Editor"
+  },
+  {
+    "title": "Huisarts",
+    "description": "Een eenvoudige webapplicatie voor een Huisarts",
+    "tech_stack": "HTML, TailwindCSS, JavaScript, PHP, MySQL",
+    "live_demo_link": "http://huisarts.larsvanholland.com/",
+    "source": "https://github.com/FilterdWater/Huisarts"
+  },
+  {
+    "title": "Bootstrap Portfolio",
+    "description": "Een portfolio gemaakt met Bootstrap",
+    "tech_stack": "HTML, Bootstrap, JavaScript",
+    "live_demo_link": "http://bootstrap.larsvanholland.com/",
+    "source": "https://github.com/FilterdWater/BootStrap-Portfolio-Website/tree/main"
+  }
+]

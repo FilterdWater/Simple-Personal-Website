@@ -1,0 +1,24 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Body from "../components/Body.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead />
+  </head>
+  <Body>
+    <Header />
+    <div
+      class="grid grid-flow-row gap-10 pb-12 sm:gap-12 md:gap-14"
+      transition:animate="slide"
+    >
+      <slot />
+    </div>
+  </Body>
+  <script>
+    import "../javascript/toggleMobileMenu.js";
+  </script>
+</html>

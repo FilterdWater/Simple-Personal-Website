@@ -1,0 +1,122 @@
+{
+  "Hobbies": [
+    {
+      "name": "Krachttraining"
+    },
+    {
+      "name": "Yoga"
+    },
+    {
+      "name": "Mediteren"
+    },
+    {
+      "name": "Programmeren"
+    },
+    {
+      "name": "Hardlopen"
+    }
+  ],
+  "Interests": [
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "Open Source"
+    },
+    {
+      "name": "Cyber Security"
+    },
+    {
+      "name": "Online Privacy"
+    },
+    {
+      "name": "Self-Hosting"
+    },
+    {
+      "name": "Design"
+    }
+  ],
+  "PeopleIFollow": [
+    {
+      "name": "Dr.K",
+      "link": "https://www.youtube.com/@HealthyGamerGG"
+    },
+    {
+      "name": "Fireship",
+      "link": "https://www.youtube.com/@Fireship"
+    },
+    {
+      "name": "Dreams of Code",
+      "link": "https://www.youtube.com/@dreamsofcode"
+    },
+    {
+      "name": "Dreams of Autonomy",
+      "link": "https://www.youtube.com/@dreamsofautonomy"
+    },
+    {
+      "name": "Branch Education",
+      "link": "https://www.youtube.com/@BranchEducation"
+    },
+    {
+      "name": "Jvscholz",
+      "link": "https://www.youtube.com/@jvscholz"
+    },
+    {
+      "name": "By Default",
+      "link": "https://www.youtube.com/@VideosByDefault"
+    },
+    {
+      "name": "Naomi Brockwell",
+      "link": "https://www.youtube.com/@NaomiBrockwellTV"
+    }
+  ],
+  "CoolProjects": [
+    {
+      "name": "Fmhy",
+      "link": "https://fmhy.net/"
+    },
+    {
+      "name": "GrapheneOS",
+      "link": "https://grapheneos.org/"
+    },
+    {
+      "name": "Excalidraw",
+      "link": "https://excalidraw.com/"
+    },
+    {
+      "name": "AlternativeTo",
+      "link": "https://alternativeto.net/"
+    },
+    {
+      "name": "Tauri",
+      "link": "https://tauri.app/"
+    },
+    {
+      "name": "Portmaster",
+      "link": "https://safing.io/"
+    },
+    {
+      "name": "Coollabs",
+      "link": "https://coollabs.io/"
+    }
+  ],
+  "TechIUse": [
+    { "name": "CSS / SCSS / TailwindCSS" },
+    { "name": "PHP / Laravel" },
+    { "name": "WordPress / ACF / Sage / Radicle" },
+    { "name": "MySQL" },
+    { "name": "Git / Github" },
+    { "name": "Astro" },
+    { "name": "WSL" },
+    { "name": "JavaScript" }
+  ],
+  "TechToTry": [
+    { "name": "Python" },
+    { "name": "React & React Native" },
+    { "name": "GSAP" },
+    { "name": "Three.js" },
+    { "name": "Docker" },
+    { "name": "C" },
+    { "name": "Rust" }
+  ]
+}

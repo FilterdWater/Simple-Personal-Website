@@ -1,0 +1,70 @@
+---
+import MainNavItems from "../json/MainNavItems.json";
+---
+
+<header transition:persist class="relative z-50 w-full pb-12">
+  <div class="mx-auto max-w-7xl">
+    <nav class="flex items-center justify-end gap-0 sm:gap-6">
+      <!-- Navigation  -->
+
+      <div class="hidden sm:block">
+        <ul class="text-md flex items-center gap-12">
+          {
+            MainNavItems.map((item) => (
+              <li>
+                <a class="custom-link-underline" href={item.href}>
+                  {item.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- HamburgerMenuBtn -->
+
+      <div class="block sm:hidden">
+        <button
+          class="inline-flex justify-center rounded-md border-2 border-emerald-400 p-2 transition-colors ease-in-out hover:bg-emerald-300"
+          aria-label="MobileMenuBtn"
+          id="btnMobileMenu"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            viewBox="0 0 512 512"
+            ><path
+              fill="currentColor"
+              d="M64 384h384v-42.67H64Zm0-106.67h384v-42.66H64ZM64 128v42.67h384V128Z"
+            ></path></svg
+          >
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+
+<div
+  transition:persist
+  id="mobileMenu"
+  class="fixed inset-0 z-40 hidden overflow-hidden overflow-y-auto bg-white/10 backdrop-blur sm:hidden"
+>
+  <div class="flex h-screen flex-col items-center justify-center">
+    <div class="container pl-10">
+      <div class="flex list-none flex-col space-y-8 text-4xl">
+        {
+          MainNavItems.map((item) => (
+            <li>
+              <a class="custom-link-underline" href={item.href}>
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>

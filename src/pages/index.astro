@@ -1,0 +1,135 @@
+---
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import ProjectsList from "../components/ProjectsList.astro";
+---
+
+<DefaultLayout>
+  <h1>Hallo</h1>
+  <h2>Mijn naam is Lars van Holland.</h2>
+  <p>
+    Ik ben een student Software / Web Developer aan het <a
+      class="custom-link-underline hover:after:bg-[#21AFE5]"
+      href="https://www.technovacollege.nl/opleidingen/software-developer-0"
+      target="_blank">Technova College</a
+    >.
+  </p>
+  <p>
+    Op het moment van schrijven loop ik stage bij <a
+      class="custom-link-underline hover:after:bg-[#1D38D0]"
+      target="_blank"
+      href="https://www.deindruk.nl/">DeIndruk</a
+    >, ben ik op zoek naar een nieuwe stage voor mijn derde jaar, werk ik aan
+    deze website en ben ik begonnen met <a
+      class="custom-link-underline hover:after:bg-[#E3B261]"
+      href="https://www.theodinproject.com/"
+      target="_blank">TheOdinProject</a
+    >, naast andere dingen in mijn leven.
+  </p>
+  <p>
+    Ik gebruik vrijwel geen sociale media meer, maar als je me wilt vinden kan
+    dat op
+    <a
+      class="custom-link-underline hover:after:bg-[#0A66C2]"
+      href="https://www.linkedin.com/in/lars-van-holland-754a7b269/"
+      target="_blank">mijn LinkedIn-profiel</a
+    > en
+    <a
+      class="custom-link-underline hover:after:bg-[#010409]"
+      href="https://github.com/FilterdWater"
+      target="_blank">mijn GitHub</a
+    >.
+  </p>
+  <div class="space-y-4">
+    <h2>
+      Live demo's <span class="text-sm font-normal"
+        >(Projecten gemaakt op Technova)</span
+      >
+    </h2>
+    <ProjectsList />
+  </div>
+  <div class="space-y-4">
+    <h2>Over deze site</h2>
+    <p>
+      Deze website is gemaakt met HTML, CSS en JavaScript, maar het meeste is
+      gemaakt met
+      <a
+        class="custom-link-underline hover:after:bg-orange-500"
+        href="https://astro.build/"
+        target="_blank">Astro</a
+      > en
+      <a
+        class="custom-link-underline hover:after:bg-[#38BDF8]"
+        href="https://tailwindcss.com/"
+        target="_blank">TailwindCSS</a
+      >.
+    </p>
+    <p>
+      Als je geïnteresseerd bent in de broncode van deze website, kun je die
+      vinden tussen <a
+        class="custom-link-underline hover:after:bg-[#010409]"
+        href="https://github.com/FilterdWater?tab=repositories"
+        target="_blank">mijn publieke GitHub-repo's</a
+      >.
+    </p>
+  </div>
+  <div class="space-y-4">
+    <h2>
+      Website-upgrades <span class="text-sm"
+        >(Dingen die ik nog wil toevoegen)</span
+      >
+    </h2>
+    <p class="text-sm">
+      Ik probeer vaak alles perfect in één keer te doen, maar "The first draft
+      of anything is sh*t" is een gezegde dat ik probeer te implementeren in
+      mijn leven zodat ik dat minder doe. Daarom heb ik een lijst met features
+      gemaakt die ik later kan toevoegen.
+    </p>
+    <ul class="list-none">
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">Maak custom favicon</div>
+      </li>
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">
+          Ervaring Pagina <span class="text-sm"
+            >(Overzicht van mijn ervaring met beschrijving en tijdlijn)</span
+          >
+        </div>
+      </li>
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">
+          Darkmode <span class="text-sm"
+            >(Heb de code al een keer gemaakt, moet alleen de "White mode flash"
+            fixen)</span
+          >
+        </div>
+      </li>
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">
+          Blogpagina <span class="text-sm"
+            >(Gebaseerd op markdown-bestanden)</span
+          >
+        </div>
+      </li>
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">
+          Navigatiemenu-styling <span class="text-sm"
+            >(Gebaseerd op welke pagina je zit)</span
+          >
+        </div>
+      </li>
+      <li class="mb-2 flex items-center">
+        <input type="checkbox" disabled />
+        <div class="ml-2 text-gray-700">
+          Fotogalerij <span class="text-sm"
+            >(Pagina met goede UI/UX voor wat leuke foto's)</span
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</DefaultLayout>
