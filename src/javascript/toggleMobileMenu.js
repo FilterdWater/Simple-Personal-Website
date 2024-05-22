@@ -1,10 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const btnMobileMenu = document.getElementById("btnMobileMenu");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const menuLinks = mobileMenu.querySelectorAll("a"); // Select all links within the mobile menu
-  const body = document.body;
+  function setupMobileMenu() {
+    const btnMobileMenu = document.getElementById("btnMobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const body = document.body;
 
-  btnMobileMenu.addEventListener("click", function () {
+    if (!btnMobileMenu || !mobileMenu) return;
+
+    // Remove previous event listeners to avoid duplicates and weird stuff from happening
+    btnMobileMenu.removeEventListener("click", toggleMobileMenu);
+    btnMobileMenu.addEventListener("click", toggleMobileMenu);
+
+    // Attach click event listener to each link within the mobile menu
+    const menuLinks = mobileMenu.querySelectorAll("a");
+    menuLinks.forEach((link) => {
+      link.removeEventListener("click", closeMobileMenuOnClick);
+      link.addEventListener("click", closeMobileMenuOnClick);
+    });
+  }
+
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const body = document.body;
     // Toggle the 'hidden' class, aka open/close the mobile menu
     mobileMenu.classList.toggle("hidden");
 
@@ -14,17 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       body.classList.add("overflow-hidden");
     }
-  });
+  }
 
-  // Add click event listener to each link within the mobile menu
-  menuLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      // Close the mobile menu when a link is clicked
-      // this looks better then changing page and seeing the animation play behind the mobile menu
-      mobileMenu.classList.add("hidden");
+  function closeMobileMenuOnClick() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const body = document.body;
+    // Close the mobile menu when a link is clicked
+    // this looks better than changing page and seeing the animation play behind the mobile menu
+    mobileMenu.classList.add("hidden");
 
-      // Remove the 'no-scroll' class from the body
-      body.classList.remove("overflow-hidden");
-    });
-  });
+    // Remove the 'no-scroll' class from the body
+    body.classList.remove("overflow-hidden");
+  }
+
+  // Initial setup
+  setupMobileMenu();
+
+  // Re-apply setup after page transitions
+  document.addEventListener("astro:page-load", setupMobileMenu);
 });
+// code comments for myself me very new to JS
