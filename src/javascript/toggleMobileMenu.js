@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!btnMobileMenu || !mobileMenu) return;
 
-    // Remove previous event listeners to avoid duplicates and weird stuff from happening
+    // Remove previous event listeners to avoid unexpected & unacounted behaviour from happening
     btnMobileMenu.removeEventListener("click", toggleMobileMenu);
     btnMobileMenu.addEventListener("click", toggleMobileMenu);
 

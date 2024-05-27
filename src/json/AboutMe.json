@@ -88,20 +88,19 @@
       "link": "https://tauri.app/"
     },
     {
-      "name": "Portmaster",
-      "link": "https://safing.io/"
-    },
-    {
       "name": "Coollabs",
       "link": "https://coollabs.io/"
     }
   ],
   "TechIUse": [
-    { "name": "CSS / SCSS / TailwindCSS" },
-    { "name": "PHP / Laravel" },
-    { "name": "WordPress / ACF / Sage / Radicle" },
+    { "name": "CSS" },
+    { "name": "SCSS" },
+    { "name": "TailwindCSS" },
+    { "name": "PHP" },
+    { "name": "Laravel" },
+    { "name": "WordPress" },
     { "name": "MySQL" },
-    { "name": "Git / Github" },
+    { "name": "Git" },
     { "name": "Astro" },
     { "name": "WSL" },
     { "name": "JavaScript" }

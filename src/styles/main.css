@@ -26,7 +26,6 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  @apply mx-auto max-w-screen-lg break-words px-[8vw] py-[4vh] text-zinc-950 antialiased lg:px-24 lg:py-6;
 }
 
 h1 {
@@ -34,11 +33,11 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl font-medium sm:text-3xl lg:text-4xl;
+  @apply text-3xl font-medium sm:text-4xl lg:text-5xl;
 }
 
 h3 {
-  @apply font-semibold;
+  @apply text-lg font-semibold;
 }
 
 p {
@@ -58,8 +57,4 @@ p {
   right: -0.1em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.65, 0.2, 1.5);
-}
-
-.custom-timeline-dot {
-  @apply absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full bg-green-300;
 }

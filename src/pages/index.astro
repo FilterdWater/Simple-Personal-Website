@@ -1,44 +1,200 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import ProjectsList from "../components/ProjectsList.astro";
+import { Image } from "astro:assets";
+import SignalQrCode from "../assets/SignalGroupQr.png";
+import Lars from "../assets/Lars.jpg";
+
+import AboutMe from "../json/AboutMe.json";
+
+import { calculateAge } from "../javascript/age";
+const birthDate = "2005-04-01";
+const age = calculateAge(birthDate);
 ---
 
 <DefaultLayout>
-  <h1>Hallo</h1>
-  <h2>Mijn naam is Lars van Holland.</h2>
-  <p>
-    Ik ben een student Software / Web Developer aan het <a
-      class="custom-link-underline hover:after:bg-[#21AFE5]"
-      href="https://www.technovacollege.nl/opleidingen/software-developer-0"
-      target="_blank">Technova College</a
-    >.
-  </p>
-  <p>
-    Op het moment van schrijven loop ik stage bij <a
-      class="custom-link-underline hover:after:bg-[#1D38D0]"
-      target="_blank"
-      href="https://www.deindruk.nl/">DeIndruk</a
-    >, ben ik op zoek naar een nieuwe stage voor mijn derde jaar, werk ik aan
-    deze website en ben ik begonnen met <a
-      class="custom-link-underline hover:after:bg-[#E3B261]"
-      href="https://www.theodinproject.com/"
-      target="_blank">TheOdinProject</a
-    >, naast andere dingen in mijn leven.
-  </p>
-  <p>
-    Ik gebruik vrijwel geen sociale media meer, maar als je me wilt vinden kan
-    dat op
-    <a
-      class="custom-link-underline hover:after:bg-[#0A66C2]"
-      href="https://www.linkedin.com/in/lars-van-holland-754a7b269/"
-      target="_blank">mijn LinkedIn-profiel</a
-    > en
-    <a
-      class="custom-link-underline hover:after:bg-[#010409]"
-      href="https://github.com/FilterdWater"
-      target="_blank">mijn GitHub</a
-    >.
-  </p>
+  <div
+    class="flex flex-col-reverse items-center justify-center gap-8 md:flex-row"
+  >
+    <div class="space-y-8 text-center md:text-start">
+      <h1>Software Developer</h1>
+      <div class="max-w-[26rem] text-xl">
+        {age} jaar oud, gevestigd in Arnhem met een passie voor programmeren en technologie
+      </div>
+      <div
+        class="my-6 flex max-w-[26rem] flex-wrap justify-center gap-3 md:justify-start"
+      >
+        <a
+          href="#"
+          target="_blank"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded-lg border border-zinc-100 bg-zinc-50 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="size-5 shrink-0 text-[#0e76a8] sm:size-6"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <path
+                d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4 5v5m0-8v.01M12 16v-5"
+              ></path>
+              <path d="M16 16v-3a2 2 0 0 0-4 0"></path>
+            </g>
+          </svg>
+          LinkedIn
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded-lg border border-zinc-100 bg-zinc-50 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="size-5 shrink-0 sm:size-6"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
+            ></path>
+          </svg>
+          Github
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded-lg border border-zinc-100 bg-zinc-50 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="size-5 shrink-0 text-green-400 sm:size-6"
+          >
+            <path
+              fill="currentColor"
+              d="M17 3.34A10 10 0 1 1 2 12l.005-.324A10 10 0 0 1 17 3.34m-2.168 11.605c-1.285-1.927-4.354-2.132-6.387-.777a1 1 0 0 0 1.11 1.664c1.195-.797 3.014-.675 3.613.223a1 1 0 1 0 1.664-1.11M16.1 11.7c-2.469-1.852-5.895-2.187-8.608-.589a1 1 0 0 0 1.016 1.724c1.986-1.171 4.544-.92 6.392.465a1 1 0 0 0 1.2-1.6m1.43-3.048C13.853 6.354 9.764 6.5 6.553 8.106a1 1 0 0 0 .894 1.788c2.635-1.317 5.997-1.437 9.023.454a1 1 0 1 0 1.06-1.696"
+            ></path>
+          </svg>
+          Spotify
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded-lg border border-zinc-100 bg-zinc-50 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="size-5 shrink-0 text-[#5865F2] sm:size-6"
+          >
+            <path
+              fill="currentColor"
+              d="m14.983 3l.123.006c2.014.214 3.527.672 4.966 1.673a1 1 0 0 1 .371.488c1.876 5.315 2.373 9.987 1.451 12.28C20.891 19.452 19.288 21 17.5 21c-.732 0-1.693-.968-2.328-2.045a22 22 0 0 0 2.103-.493a1 1 0 1 0-.55-1.924c-3.32.95-6.13.95-9.45 0a1 1 0 0 0-.55 1.924q1.074.307 2.103.494C8.193 20.031 7.232 21 6.5 21c-1.788 0-3.391-1.548-4.428-3.629c-.888-2.217-.39-6.89 1.485-12.204a1 1 0 0 1 .371-.488C5.367 3.678 6.88 3.22 8.894 3.006a1 1 0 0 1 .935.435l.063.107l.651 1.285l.137-.016a13 13 0 0 1 2.643 0l.134.016l.65-1.284a1 1 0 0 1 .754-.54zM9 10a2 2 0 0 0-1.977 1.697l-.018.154L7 12l.005.15A2 2 0 1 0 9 10m6 0a2 2 0 0 0-1.977 1.697l-.018.154L13 12l.005.15A2 2 0 1 0 15 10"
+            ></path>
+          </svg>
+          Discord
+        </a>
+      </div>
+    </div>
+    <div>
+      <Image
+        src={Lars}
+        class="h-auto w-96 rounded-sm outline outline-zinc-800"
+        alt="Lars van Holland"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-8 lg:flex-row">
+    <div class="space-y-4">
+      <h2>Een beetje over mij</h2>
+      <p>
+        Ik ben een student Software / Web Developer aan het <a
+          class="custom-link-underline hover:after:bg-[#21AFE5]"
+          href="https://www.technovacollege.nl/opleidingen/software-developer-0"
+          target="_blank">Technova College</a
+        >.
+      </p>
+      <p>
+        Op het moment van schrijven loop ik stage bij <a
+          class="custom-link-underline hover:after:bg-[#1D38D0]"
+          target="_blank"
+          href="https://www.deindruk.nl/">DeIndruk</a
+        >, ben ik op zoek naar een nieuwe stage voor mijn derde jaar, werk ik
+        aan deze website en ben ik begonnen met <a
+          class="custom-link-underline hover:after:bg-[#E3B261]"
+          href="https://www.theodinproject.com/"
+          target="_blank">TheOdinProject</a
+        >, naast andere dingen in mijn leven.
+      </p>
+      <p>
+        Ik gebruik vrijwel geen sociale media meer, maar als je contant op wilt
+        nemen kan dat via
+        <a
+          class="custom-link-underline hover:after:bg-[#0A66C2]"
+          href="https://www.linkedin.com/in/lars-van-holland-754a7b269/"
+          target="_blank">LinkedIn</a
+        > en
+        <span class="group relative inline-block">
+          <!-- Link Trigger -->
+          <a
+            href="https://signal.me/#eu/zCEtrHMAJ5xk_Kde4OUQxd9CidceFMvptx8I_63324_eqfwQ3pdAMbcxF3pZkOUo"
+            target="_blank"
+            class="custom-link-underline block hover:after:bg-[#3A76EF]"
+          >
+            Signal
+          </a>
+          <span
+            class="right absolute -right-28 bottom-full z-10 hidden w-72 transform shadow group-hover:block"
+          >
+            <Image
+              src={SignalQrCode}
+              alt="SignalQrCode"
+              class="h-auto w-full"
+            />
+          </span>
+        </span>.
+      </p>
+    </div>
+    <div class="space-y-4">
+      <div class="space-y-4">
+        <div class="flex flex-row items-center gap-1">
+          <svg
+            class="h-10 w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            ><path
+              fill="currentColor"
+              d="M14.18 4.276a.75.75 0 0 1 .531.918l-3.973 14.83a.75.75 0 0 1-1.45-.389l3.974-14.83a.75.75 0 0 1 .919-.53m2.262 3.053a.75.75 0 0 1 1.059-.056l1.737 1.564c.737.662 1.347 1.212 1.767 1.71c.44.525.754 1.088.754 1.784c0 .695-.313 1.258-.754 1.782c-.42.499-1.03 1.049-1.767 1.711l-1.737 1.564a.75.75 0 0 1-1.004-1.115l1.697-1.527c.788-.709 1.319-1.19 1.663-1.598c.33-.393.402-.622.402-.818c0-.195-.072-.424-.402-.817c-.344-.409-.875-.89-1.663-1.598l-1.697-1.527a.75.75 0 0 1-.056-1.06m-8.94 1.06a.75.75 0 1 0-1.004-1.115L4.761 8.836c-.737.662-1.347 1.212-1.767 1.71c-.44.525-.754 1.088-.754 1.784c0 .695.313 1.258.754 1.782c.42.499 1.03 1.049 1.767 1.711l1.737 1.564a.75.75 0 0 0 1.004-1.115l-1.697-1.527c-.788-.709-1.319-1.19-1.663-1.598c-.33-.393-.402-.622-.402-.818c0-.195.072-.424.402-.817c.344-.409.875-.89 1.663-1.598z"
+            ></path></svg
+          >
+          <h3>Technische vaardigheden</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {
+            AboutMe.TechIUse.map((technologie) => (
+              <span class="mr-1 inline-block rounded-md bg-zinc-100 px-4 py-2 text-sm">
+                {technologie.name}
+              </span>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="space-y-4">
     <h2>
       Live demo's <span class="text-sm font-normal"
@@ -50,8 +206,8 @@ import ProjectsList from "../components/ProjectsList.astro";
   <div class="space-y-4">
     <h2>Over deze site</h2>
     <p>
-      Deze website is gemaakt met HTML, CSS en JavaScript, maar het meeste is
-      gemaakt met
+      Deze website bestaat uit HTML, CSS, JavaScript en is grotendeels gemaakt
+      met
       <a
         class="custom-link-underline hover:after:bg-orange-500"
         href="https://astro.build/"
@@ -78,17 +234,7 @@ import ProjectsList from "../components/ProjectsList.astro";
         >(Dingen die ik nog wil toevoegen)</span
       >
     </h2>
-    <p class="text-sm">
-      Ik probeer vaak alles perfect in één keer te doen, maar "The first draft
-      of anything is sh*t" is een gezegde dat ik probeer te implementeren in
-      mijn leven zodat ik dat minder doe. Daarom heb ik een lijst met features
-      gemaakt die ik later kan toevoegen.
-    </p>
     <ul class="list-none">
-      <li class="mb-2 flex items-center">
-        <input type="checkbox" disabled />
-        <div class="ml-2 text-gray-700">Maak custom favicon</div>
-      </li>
       <li class="mb-2 flex items-center">
         <input type="checkbox" disabled />
         <div class="ml-2 text-gray-700">
