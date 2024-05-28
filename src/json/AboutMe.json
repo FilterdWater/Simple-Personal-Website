@@ -105,6 +105,14 @@
     { "name": "WSL" },
     { "name": "JavaScript" }
   ],
+  "ToolsIUse": [
+    { "name": "Fedora Desktop" },
+    { "name": "VSCodium" },
+    { "name": "Librewolf" },
+    { "name": "Brave" },
+    { "name": "Node Version Manager" },
+    { "name": "Github" }
+  ],
   "TechToTry": [
     { "name": "Python" },
     { "name": "React & React Native" },

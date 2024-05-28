@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-  @apply text-lg font-light sm:text-xl lg:text-2xl;
+  @apply text-base font-light sm:text-lg lg:text-xl;
 }
 
 .custom-link-underline {
