@@ -8,7 +8,7 @@
   },
   {
     "title": "Huisarts",
-    "description": "Een eenvoudige webapplicatie voor een Huisarts",
+    "description": "Een eenvoudige webapplicatie voor een denkbeeldige huisarts",
     "tech_stack": ["HTML", "TailwindCSS", "JavaScript", "PHP", "MySQL"],
     "live_demo_link": "http://huisarts.larsvanholland.com/",
     "source": "https://github.com/FilterdWater/Huisarts"

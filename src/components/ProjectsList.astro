@@ -1,57 +1,58 @@
 ---
 import Projects from "../json/Projects.json";
 ---
-<div class="space-y-4">
-  {Projects.map((project) => (
-    <details
-      class="group border-s-8 border-t-2 border-e-2 border-b-2 border-green-500 bg-zinc-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-    >
-      <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-        <h3>{project.title}</h3>
-        <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
 
-      <div class="mt-4 leading-relaxed text-gray-700">
-        <p>{project.description}</p>
-        <div>
-          <div class="flex flex-wrap gap-2 mt-2">
-            {project.tech_stack.map((tech) => (
-              <span class="px-3 py-1 rounded bg-green-500 text-white text-sm">
-                {tech}
-              </span>
-            ))}
+<div class="space-y-4">
+  {
+    Projects.map((project) => (
+      <details class="group border-b-2 border-e-2 border-s-8 border-t-2 border-green-500 bg-zinc-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+          <h3>{project.title}</h3>
+          <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </summary>
+
+        <div class="mt-4 leading-relaxed text-gray-700">
+          <p>{project.description}</p>
+          <div>
+            <div class="mt-2 flex flex-wrap gap-2">
+              {project.tech_stack.map((tech) => (
+                <span class="rounded bg-amber-500 px-3 py-1 text-sm text-white">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div class="mt-4 space-x-2">
+            <a
+              class="rounded border border-zinc-200 bg-zinc-100 py-2 pl-2 pr-1 transition-colors hover:border-zinc-300 hover:bg-zinc-200"
+              href={project.live_demo_link}
+              target="_blank"
+            >
+              Live Demo
+            </a>
+            <a
+              class="rounded border border-zinc-200 bg-zinc-100 px-2 py-2 transition-colors hover:border-zinc-300 hover:bg-zinc-200"
+              href={project.source}
+              target="_blank"
+            >
+              Source
+            </a>
           </div>
         </div>
-        <div class="space-x-2 mt-4">
-          <a
-            class="custom-link-underline"
-            href={project.live_demo_link}
-            target="_blank"
-          >
-            Live Demo
-          </a>
-          <a
-            class="custom-link-underline"
-            href={project.source}
-            target="_blank"
-          >
-            Source
-          </a>
-        </div>
-      </div>
-    </details>
-  ))}
+      </details>
+    ))
+  }
 </div>
