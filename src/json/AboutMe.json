@@ -101,9 +101,9 @@
     { "name": "WordPress" },
     { "name": "MySQL" },
     { "name": "Git" },
-    { "name": "Astro" },
     { "name": "WSL" },
-    { "name": "JavaScript" }
+    { "name": "JavaScript" },
+    { "name": "Astro" }
   ],
   "ToolsIUse": [
     { "name": "Fedora Desktop" },
