@@ -27,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Toggle the 'no-scroll' class aka overflow-hidden on the body so the user cant scroll when the mobile menu is open
     if (mobileMenu.classList.contains("hidden")) {
       body.classList.remove("overflow-hidden");
+      body.classList.remove("touch-none");
     } else {
       body.classList.add("overflow-hidden");
+      body.classList.add("touch-none");
     }
   }
 
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Remove the 'no-scroll' class from the body
     body.classList.remove("overflow-hidden");
+    body.classList.remove("touch-none");
   }
 
   // Initial setup
