@@ -106,6 +106,7 @@
     { "name": "MySQL" },
     { "name": "Git" },
     { "name": "JavaScript" },
+    { "name": "JQuery" },
     { "name": "Astro" },
     { "name": "Node.js" },
     { "name": "Npm" },
