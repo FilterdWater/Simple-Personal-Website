@@ -105,7 +105,6 @@
     { "name": "WordPress" },
     { "name": "MySQL" },
     { "name": "Git" },
-    { "name": "WSL" },
     { "name": "JavaScript" },
     { "name": "Astro" }
   ],
@@ -115,7 +114,9 @@
     { "name": "Librewolf" },
     { "name": "Brave" },
     { "name": "Node Version Manager" },
-    { "name": "Github" }
+    { "name": "Github" },
+    { "name": "Xampp" },
+    { "name": "WSL" }
   ],
   "TechToTry": [
     { "name": "Python" },

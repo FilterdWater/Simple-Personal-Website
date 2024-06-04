@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function setupMobileMenu() {
     const btnMobileMenu = document.getElementById("btnMobileMenu");
     const mobileMenu = document.getElementById("mobileMenu");
+    const headerLogo = document.getElementById("headerLogo");
     const body = document.body;
 
     if (!btnMobileMenu || !mobileMenu) return;
@@ -16,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
       link.removeEventListener("click", closeMobileMenuOnClick);
       link.addEventListener("click", closeMobileMenuOnClick);
     });
+
+    headerLogo.removeEventListener("click", closeMobileMenuOnClick);
+    headerLogo.addEventListener("click", closeMobileMenuOnClick);
   }
 
   function toggleMobileMenu() {
