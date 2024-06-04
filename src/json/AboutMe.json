@@ -106,7 +106,10 @@
     { "name": "MySQL" },
     { "name": "Git" },
     { "name": "JavaScript" },
-    { "name": "Astro" }
+    { "name": "Astro" },
+    { "name": "Node.js" },
+    { "name": "Npm" },
+    { "name": "Yarn" }
   ],
   "ToolsIUse": [
     { "name": "Fedora Desktop" },
@@ -116,7 +119,7 @@
     { "name": "Node Version Manager" },
     { "name": "Github" },
     { "name": "Xampp" },
-    { "name": "WSL" }
+    { "name": "Filezilla" }
   ],
   "TechToTry": [
     { "name": "Python" },
