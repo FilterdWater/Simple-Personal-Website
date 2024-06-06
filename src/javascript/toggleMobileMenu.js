@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.removeEventListener("click", closeMobileMenuOnClick);
       link.addEventListener("click", closeMobileMenuOnClick);
     });
-
+    // Attach click event listener to top left logo / title
     headerLogo.removeEventListener("click", closeMobileMenuOnClick);
     headerLogo.addEventListener("click", closeMobileMenuOnClick);
   }

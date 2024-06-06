@@ -1,4 +1,5 @@
 [
   { "name": "Home", "href": "/" },
+  { "name": "Over mij", "href": "/about" },
   { "name": "Underconstruction", "href": "/underconstruction" }
 ]

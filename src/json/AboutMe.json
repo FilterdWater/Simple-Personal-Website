@@ -97,6 +97,7 @@
     }
   ],
   "TechIUse": [
+    { "name": "HTML" },
     { "name": "CSS" },
     { "name": "SCSS" },
     { "name": "TailwindCSS" },

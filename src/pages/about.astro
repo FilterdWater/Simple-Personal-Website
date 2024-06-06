@@ -12,51 +12,27 @@ const age = calculateAge(birthDate);
 ---
 
 <DefaultLayout>
-  <h1>Dit ben ik</h1>
-  <div>
-    <div class="flex items-center justify-center">
-      <Image
-        class="max-h-[42rem] w-auto rounded-sm"
-        src={Lars}
-        alt="Lars van Holland"
-      />
-    </div>
-  </div>
-  <div class="space-y-4">
-    <h2>Technische vaardigheden</h2>
-    <div class="flex flex-wrap gap-2">
-      {
-        AboutMe.TechIUse.map((technologie) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
-            {technologie.name}
-          </span>
-        ))
-      }
-    </div>
-  </div>
-  <div class="space-y-4">
-    <h2>Wat ik wil proberen</h2>
-    <div class="flex flex-wrap gap-2">
-      {
-        AboutMe.TechToTry.map((technologie) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
-            {technologie.name}
-          </span>
-        ))
-      }
-    </div>
-  </div>
   <div class="space-y-4">
     <h2>Wat meer over mij</h2>
     <p>
-      Hoi! Ik ben Lars, {age} jaar oud en woon in Arnhem. Ik ben een
+      Hoi! Ik ben Lars, een
       <a
         class="custom-link-underline"
         href="https://dictionary.cambridge.org/us/dictionary/english/ambivert"
         target="_blank">ambivert</a
-      > persoon. Ik geniet ervan om mooie, eenvoudige en functionele websites te
-      creëren. Ondanks mijn voorkeur voor minimalisme en eenvoudig design, heb ik
-      een zwak voor oude retro websites zoals
+      > persoon. Sinds 2022 ben ik aan het programmeren en heb er geen spijt van.
+      Mijn interesse in computers en het internet leidde mij tot de keuze voor een
+      opleiding tot softwareontwikkelaar.
+    </p>
+    <p>
+      Ik geniet ervan om mooie, eenvoudige en functionele websites te creëren.
+      Het oplossen van problemen en het constant veranderende landschap van
+      technologieën maakt programmeren en webontwikkeling ontzettend leuk voor
+      mij.
+    </p>
+    <p>
+      Ondanks mijn voorkeur voor eenvoudig design, heb ik een zwak voor oude
+      retro websites zoals
       <a
         class="custom-link-underline hover:after:bg-[#2FA893]"
         href="https://dimden.dev/"
@@ -69,34 +45,12 @@ const age = calculateAge(birthDate);
       >.
     </p>
     <p>
-      Ik ben nog niet zo goed in programmeren als ik zou willen, maar ik word
-      bijna elke dag iets beter. Uiteindelijk hoop ik code te kunnen schrijven
-      die goed genoeg is voor FOSS-projecten die ik zelf gebruik en/of cool
-      vind.
+      Buiten programmeren heb ik een interesse in filosofie en content die over
+      de menselijke aard gaat. Hoewel ik nog niet veel lees, lijkt het me leuk
+      om hier ooit tijd voor te maken. Daarnaast doe ik al heel lang aan
+      krachttraining, wat me helpt om fit en gefocust te blijven.
     </p>
-    <p>
-      Mijn dagelijkse tools zijn onder andere
-      <a
-        class="custom-link-underline hover:after:bg-[#51A2DA]"
-        href="https://fedoraproject.org/workstation/"
-        target="_blank">Fedora Linux</a
-      >,
-      <a
-        class="custom-link-underline hover:after:bg-[#2C6FC2]"
-        href="https://vscodium.com/"
-        target="_blank">VSCodium</a
-      >,
-      <a
-        class="custom-link-underline hover:after:bg-[#00ACFF]"
-        href="https://librewolf.net/"
-        target="_blank">Librewolf</a
-      > en
-      <a
-        class="custom-link-underline hover:after:bg-[#FF5500]"
-        href="https://brave.com/"
-        target="_blank">Brave</a
-      >.
-    </p>
+    <p>Ik probeer mezelf altijd te verbeteren, op elk vlak.</p>
   </div>
 
   <div class="space-y-4">
@@ -104,7 +58,7 @@ const age = calculateAge(birthDate);
     <div class="flex flex-wrap gap-2">
       {
         AboutMe.Interests.map((interest) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
+          <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
             {interest.name}
           </span>
         ))
@@ -116,7 +70,7 @@ const age = calculateAge(birthDate);
     <div class="flex flex-wrap gap-2">
       {
         AboutMe.Hobbies.map((hobby) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
+          <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
             {hobby.name}
           </span>
         ))
@@ -125,14 +79,14 @@ const age = calculateAge(birthDate);
   </div>
   <div class="space-y-4">
     <h2>
-      Wat coole projecten <span class="text-sm"
-        >(die ik gebruik / volg / interessant vind)</span
-      >
+      Wat coole projecten <div class="text-sm">
+        die ik gebruik / volg / interessant vind
+      </div>
     </h2>
     <div class="flex flex-wrap gap-2">
       {
         AboutMe.CoolProjects.map((project) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
+          <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
             <a
               href={project.link}
               class="custom-link-underline z-10"
@@ -147,14 +101,14 @@ const age = calculateAge(birthDate);
   </div>
   <div class="space-y-4">
     <h2>
-      Wat content creators <span class="text-sm"
-        >(voor entertainment, informatie en inspiratie)</span
-      >
+      Wat content creators <div class="text-sm">
+        voor entertainment, informatie en inspiratie
+      </div>
     </h2>
     <div class="flex flex-wrap gap-2">
       {
         AboutMe.PeopleIFollow.map((person) => (
-          <span class="mr-1 inline-block rounded-full bg-gray-200 px-4 py-2 text-sm">
+          <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
             <a
               href={person.link}
               class="custom-link-underline z-10"

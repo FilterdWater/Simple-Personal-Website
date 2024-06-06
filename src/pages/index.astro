@@ -27,7 +27,7 @@ const age = calculateAge(birthDate);
         <a
           href="https://www.linkedin.com/in/lars-van-holland-754a7b269/"
           target="_blank"
-          class="flex max-w-32 grow items-center justify-center gap-1 rounded border border-zinc-200 bg-zinc-100 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded border border-zinc-400 bg-zinc-200 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const age = calculateAge(birthDate);
         <a
           href="https://github.com/FilterdWater"
           target="_blank"
-          class="flex max-w-32 grow items-center justify-center gap-1 rounded border border-zinc-200 bg-zinc-100 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
+          class="flex max-w-32 grow items-center justify-center gap-1 rounded border border-zinc-400 bg-zinc-200 p-2 text-sm transition hover:rotate-2 hover:scale-110 sm:gap-2 sm:px-4 sm:text-base"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const age = calculateAge(birthDate);
     <div class="max-w-full space-y-4 xl:max-w-[40rem]">
       <h2>Een beetje over mij</h2>
       <p>
-        Ik ben Lars, een gedreven software developer in opleiding aan het
+        Ik ben Lars, een gedreven softwareontwikkelaar in opleiding aan het
         <a
           class="custom-link-underline hover:after:bg-[#21AFE5]"
           href="https://www.technovacollege.nl/opleidingen/software-developer-0"
@@ -92,7 +92,7 @@ const age = calculateAge(birthDate);
             href="https://www.deindruk.nl/"
           >
             DeIndruk</a
-          >, waar ik waardevolle praktijkervaring opdoe in vooral web
+          >, waar ik waardevolle praktijkervaring opdoe, in vooral web
           development, maar ook in marketing en design. Tegelijkertijd ben ik
           actief op zoek naar een nieuwe stage voor mijn derde jaar zodat ik
           nieuwe vaardigheden kan leren en mijn bestaande vaardigheden verder
@@ -107,17 +107,17 @@ const age = calculateAge(birthDate);
             target="_blank"
           >
             The Odin Project</a
-          >, een uitgebreid curriculum die mijn kennis en vaardigheden in web
+          >, een uitgebreid curriculum dat mijn kennis en vaardigheden in web
           development verder uitbreidt.
         </p>
 
         <p>
-          Ik werk voortdurend aan het verbeteren van mijn programming skills
-          zowel als in mijn vrije tijd, op school, of op stage. Hoewel ik nog
-          niet op het niveau ben dat ik nastreef, maak ik elke dag vooruitgang.
-          Mijn uiteindelijke doel is om code te kunnen schrijven die bijdraagt
-          aan FOSS-projecten waar ik zelf gebruik van maak en die ik inspirerend
-          vind.
+          Ik werk voortdurend aan het verbeteren van mijn
+          programmeervaardigheden zowel als in mijn vrije tijd, op school als op
+          stage. Hoewel ik nog niet op het niveau ben dat ik nastreef, maak ik
+          elke dag vooruitgang. Mijn uiteindelijke doel is om code te kunnen
+          schrijven die bijdraagt aan FOSS-projecten waar ik zelf gebruik van
+          maak en die ik inspirerend vind.
         </p>
 
         <p>
@@ -164,12 +164,12 @@ const age = calculateAge(birthDate);
               d="M14.18 4.276a.75.75 0 0 1 .531.918l-3.973 14.83a.75.75 0 0 1-1.45-.389l3.974-14.83a.75.75 0 0 1 .919-.53m2.262 3.053a.75.75 0 0 1 1.059-.056l1.737 1.564c.737.662 1.347 1.212 1.767 1.71c.44.525.754 1.088.754 1.784c0 .695-.313 1.258-.754 1.782c-.42.499-1.03 1.049-1.767 1.711l-1.737 1.564a.75.75 0 0 1-1.004-1.115l1.697-1.527c.788-.709 1.319-1.19 1.663-1.598c.33-.393.402-.622.402-.818c0-.195-.072-.424-.402-.817c-.344-.409-.875-.89-1.663-1.598l-1.697-1.527a.75.75 0 0 1-.056-1.06m-8.94 1.06a.75.75 0 1 0-1.004-1.115L4.761 8.836c-.737.662-1.347 1.212-1.767 1.71c-.44.525-.754 1.088-.754 1.784c0 .695.313 1.258.754 1.782c.42.499 1.03 1.049 1.767 1.711l1.737 1.564a.75.75 0 0 0 1.004-1.115l-1.697-1.527c-.788-.709-1.319-1.19-1.663-1.598c-.33-.393-.402-.622-.402-.818c0-.195.072-.424.402-.817c.344-.409.875-.89 1.663-1.598z"
             ></path>
           </svg>
-          <h3>Technische vaardigheden</h3>
+          <h3>Mijn technische vaardigheden</h3>
         </div>
         <div class="flex flex-wrap gap-2">
           {
             AboutMe.TechIUse.map((technologie) => (
-              <span class="mr-1 inline-block rounded border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm">
+              <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
                 {technologie.name}
               </span>
             ))
@@ -195,7 +195,7 @@ const age = calculateAge(birthDate);
         <div class="flex flex-wrap gap-2">
           {
             AboutMe.TechToTry.map((tech) => (
-              <span class="mr-1 inline-block rounded border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm">
+              <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
                 {tech.name}
               </span>
             ))
@@ -213,12 +213,12 @@ const age = calculateAge(birthDate);
               d="M3 6.25A3.25 3.25 0 0 1 6.25 3h11.5A3.25 3.25 0 0 1 21 6.25v5.658a1.4 1.4 0 0 0-.988-.791a5 5 0 0 0-.512-.085V8.5h-15v9.25c0 .966.784 1.75 1.75 1.75h5.676l-.186.186A2.5 2.5 0 0 0 11.044 21H6.25A3.25 3.25 0 0 1 3 17.75zm12.994 5.683L14.28 10.22a.75.75 0 1 0-1.06 1.06l1.691 1.692a5.1 5.1 0 0 1 1.083-1.04M4.5 7h15v-.75a1.75 1.75 0 0 0-1.75-1.75H6.25A1.75 1.75 0 0 0 4.5 6.25zm6.28 4.28a.75.75 0 1 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-2.47-2.47zm9.019.814c.353.077.44.507.185.762l-1.905 1.904a1.527 1.527 0 0 0 2.16 2.16l1.905-1.904c.255-.255.685-.168.762.185a4.075 4.075 0 0 1-5.57 4.622l-2.729 2.73a1.527 1.527 0 0 1-2.16-2.16l2.73-2.73a4.074 4.074 0 0 1 4.622-5.57"
             ></path></svg
           >
-          <h3>Tools die ik dagelijks gebruik</h3>
+          <h3>Tools die ik gebruik</h3>
         </div>
         <div class="flex flex-wrap gap-2">
           {
             AboutMe.ToolsIUse.map((tool) => (
-              <span class="mr-1 inline-block rounded border border-zinc-200 bg-zinc-100 px-4 py-2 text-sm">
+              <span class="mr-1 inline-block rounded border border-zinc-400 bg-zinc-200 px-4 py-2 text-sm">
                 {tool.name}
               </span>
             ))
@@ -231,7 +231,7 @@ const age = calculateAge(birthDate);
   <div class="space-y-4">
     <h2>
       Live demo's <div class="text-sm font-normal">
-        (Wat projecten die gemaakt zijn op Technova)
+        Wat projecten die gemaakt zijn op Technova
       </div>
     </h2>
     <ProjectsList />
