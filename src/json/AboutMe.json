@@ -80,6 +80,10 @@
       "link": "https://grapheneos.org/"
     },
     {
+      "name": "Zed",
+      "link": "https://zed.dev/"
+    }
+    {
       "name": "Excalidraw",
       "link": "https://excalidraw.com/"
     },
@@ -109,7 +113,6 @@
     { "name": "JavaScript" },
     { "name": "JQuery" },
     { "name": "Astro" },
-    { "name": "Node.js" },
     { "name": "Npm" },
     { "name": "Yarn" }
   ],
