@@ -118,6 +118,7 @@
   ],
   "ToolsIUse": [
     { "name": "Fedora Desktop" },
+    { "name": "Ubuntu" },
     { "name": "VSCodium" },
     { "name": "Librewolf" },
     { "name": "Brave" },
